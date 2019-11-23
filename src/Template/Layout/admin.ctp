@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <?php  echo $this->Html->css(['signin', 'bootstrap.min', 'index&content']); ?>
+  <?php  echo $this->Html->css(['signin', 'bootstrap.min', 'index&content','style']); ?>
 
   <title>Đăng nhập</title>
 
@@ -16,7 +16,11 @@
     echo $this->Html->script(array(
     'bootstrap.min', 'jquery-3.3.1.slim.min', 'popper.min')); 
     ?>
+    
 
   
 </head>
-<?php echo $this->fetch('content');?>
+<?= $this->Flash->render() ?>
+<div class="container clearfix">
+        <?= $this->fetch('content') ?>
+</div>

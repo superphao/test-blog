@@ -127,7 +127,12 @@
     </div>
   </div>
 </main>
-
+<footer id="footer">
+    <ul style="padding: 15px; margin-bottom: 0px;">
+      <h3 style="padding-bottom: 0px;text-decoration: none;">Ăn ngon cùng Cooky</h3>
+      <p style="font-size: 14px"> @2019 design by Team 5</p>
+    </ul>
+  </footer>
   <script type="text/javascript">
     document.getElementById('user_email').focus();
 
